@@ -3,10 +3,10 @@ name: Prisma Cloud Compute Image Scan
 on: [push, pull_request]
 
 env:
-  PCC_USER: ${{ secrets.PCC_USER }}
-  PCC_PASS: ${{ secrets.PCC_PASS }}
-  PCC_CONSOLE_URL: ${{ secrets.PCC_CONSOLE_URL }}
-  IMAGE_NAME: ${{ github.repository }}:${{ github.sha }}
+  PCC_USER: a8ab63a5-d570-4ad9-8e46-bf60d2ee6a18
+  PCC_PASS: dCzy2IIqqDF/0N+VXufKAkA0rg8=
+  PCC_CONSOLE_URL: https://europe-west3.cloud.twistlock.com/eu-2-143567095
+  IMAGE_NAME: anjalispatil/microservicedemo
 
 jobs:
   # Jobs are ran independently from each other, so build and scan needs to be in a single job.
